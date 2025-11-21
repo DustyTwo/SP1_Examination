@@ -9,33 +9,23 @@ public class CoinPickUpSound : MonoBehaviour
     private TMP_Text coinPickUpText;
     private int coinValue;
     
-    //private AudioSource audioSource;
+    private AudioSource audioSource;
     
     void Awake()
     {
-        //audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         coinPickUpText = GetComponentInChildren<TMP_Text>();
 
-    }
-    
-    
-    void Start()
-    {
-        //audioSource.Play();
     }
     
     void Update()
     {
         timeAlive += Time.deltaTime;
         
-        if(timeAlive >= timeToLive)
+        if(timeAlive >= timeToLive && !audioSource.isPlaying)
         {
             Destroy(this.gameObject);
         }
-       //if(timeAlive >= timeToLive && !audioSource.isPlaying)
-       //{
-       //    Destroy(this.gameObject);
-       //}
     }
 
     public void SetCoinValue(int amount)
