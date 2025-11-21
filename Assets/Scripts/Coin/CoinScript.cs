@@ -12,11 +12,11 @@ public class CoinScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //GameObject coinPickUpAudioPlayerInstance = Instantiate(coinPickUpAudioPlayer, transform.position, Quaternion.identity);
-            //
-            //coinPickUpAudioPlayerInstance.GetComponent<CoinPickUpSound>().SetCoinValue(coinValue);
-            //
-            //CoinCounterText.instance.IncrementCounter(coinValue);
+            GameObject coinPickUpAudioPlayerInstance = Instantiate(coinPickUpAudioPlayer, transform.position, Quaternion.identity);
+            
+            coinPickUpAudioPlayerInstance.GetComponent<CoinPickUpSound>().SetCoinValue(coinValue);
+            
+            CoinCounterText.instance.IncrementCounter(coinValue);
         
             Destroy(this.gameObject);
         }

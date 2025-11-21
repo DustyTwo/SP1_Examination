@@ -160,5 +160,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d3ff421bcf654409635551257ac60e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinPickUpAudioPlayer: {fileID: 0}
+  coinPickUpAudioPlayer: {fileID: 7358456408558734764, guid: 300850a7581da8b4e9d9c3835da16ac8, type: 3}
   coinValue: 1
