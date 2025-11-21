@@ -80,10 +80,10 @@ public class PlayerMovement : MonoBehaviour
         if (jumpPressed && grounded)
         {
             myRigidbody.linearVelocityY = jumpSpeed;
-            if (!jumpAudioSource.isPlaying)
-            {
-                jumpAudioSource.Play();
-            }
+            //if (!jumpAudioSource.isPlaying)
+            //{
+            //    jumpAudioSource.Play();
+            //}
         }
         
     }
